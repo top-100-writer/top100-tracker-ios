@@ -11,13 +11,11 @@ let package = Package(
     products: [
         .library(
             name: "TrackerTop100SDK",
-            // Используем таргет обертку над XCFramework и его зависимостями
             targets: ["TrackerTop100SDK"]),
         ],
     dependencies: [
     ],
     targets: [
-        // Подключаем наш фреймворк
-        .binaryTarget(name: "TrackerTop100SDK", url: "https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/0.0.1/TrackerTop100SDK.xcframework.zip", checksum: "9abab031e185e2207f14fb20d345322f9c382a67b599d7fb84f7a3b4029c9ab7")
+        .binaryTarget(name: "TrackerTop100SDK", url: "https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.0.0/TrackerTop100SDK.xcframework.zip", checksum: "9abab031e185e2207f14fb20d345322f9c382a67b599d7fb84f7a3b4029c9ab7")
     ]
 )
