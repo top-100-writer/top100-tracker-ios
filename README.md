@@ -22,8 +22,11 @@ TrackerTop100(settings: settings)
 TrackerTop100.trackPageView(className: <CLASS_NAME>, url: <URL>, title: <TITLE>)
 ```
 где 
+
 CLASS_NAME (обязательный) - название активности, например, "MainActivity"
+
 URL (опциональный) - релевантный url для web страницы, например, "http://rambler.ru"
+
 TITLE (опциональный) - название экрана
 
 
@@ -32,5 +35,7 @@ TITLE (опциональный) - название экрана
 TrackerTop100.trackEvent(eventName: <EVENT_NAME>, eventValues: <EVENT_VALUES>)
 ```
 где
+
 EVENT_NAME - произвольное название события
+
 EVENT_VALUES - произвольные данные о событии, не более 30 параметров в формате `[String, String]`
