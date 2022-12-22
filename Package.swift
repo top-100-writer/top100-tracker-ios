@@ -16,6 +16,6 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .binaryTarget(name: "TrackerTop100SDK", url: "https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.1.2/TrackerTop100SDK.xcframework.zip", checksum: "4ecb4d9aac928028c3e9f0df629a805b88a51cfabdd5624d8e437b2ed81b1c8f")
+        .binaryTarget(name: "TrackerTop100SDK", url: "https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.2.0/TrackerTop100SDK.xcframework.zip", checksum: "80eefa1aaec690c97c299ea4ff12d9d2307090f22e79de9756c76eb624bca28f")
     ]
 )
