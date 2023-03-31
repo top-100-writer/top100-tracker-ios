@@ -1,7 +1,7 @@
 # TrackerTop100SDK IOS
 TrackerTop100 обеспечивает возможность собирать и отправлять данные в Топ-100 аналитику с ios приложений.
 
-SDK архив: [Скачать](https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.5.1/TrackerTop100SDK.xcframework.zip)
+SDK архив: [Скачать](https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.6.0/TrackerTop100SDK.xcframework.zip)
 
 [Документация](https://top-100-writer.gitbook.io/top100-documentation/ios-sdk-beta)
 
@@ -11,17 +11,24 @@ SDK архив: [Скачать](https://github.com/top-100-writer/top100-tracke
 ```
 import TrackerTop100SDK
 ``` 
-3. Инициализируйте счетчик в методе `application` класса `AppDelegate`
+3. Инициализация счётчика произведена в методе `application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool` класса `AppDelegate` одним из способов:
 ```
-let settings = TrackerTop100Settings(projectId: <projectId>)
-TrackerTop100(settings: settings!)
+let settings = TrackerTop100Settings(projectId: <projectId>)!
+TrackerTop100(settings: settings.build())
 ```
+или
+```
+let settings1 = TrackerTop100Settings(projectId: <projectId-1>)!
+let settings2 = TrackerTop100Settings(projectId: <projectId-2>)!
+try TrackerTop100.activate(multipleSettings: [settings1.build(), settings2.build()])
+```
+
 ## Отправка событий
 Для фиксирования просмотра экрана необходимо вызвать следующий метод
 ```
 TrackerTop100.trackPageView(className: <CLASS_NAME>, url: <URL>, title: <TITLE>)
 ```
-где 
+,где 
 
 CLASS_NAME (обязательный) - название активности, например, "MainActivity"
 
@@ -34,7 +41,7 @@ TITLE (опциональный) - название экрана
 ```
 TrackerTop100.trackEvent(eventName: <EVENT_NAME>, eventValues: <EVENT_VALUES>)
 ```
-где
+,где
 
 EVENT_NAME - произвольное название события
 
