@@ -1,7 +1,7 @@
 # TrackerTop100SDK iOS
 TrackerTop100 обеспечивает возможность собирать и отправлять данные в Топ-100 аналитику с iOS приложений.
 
-SDK архив: [Скачать](https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.11.0/TrackerTop100SDK.xcframework.zip)
+SDK архив: [Скачать](https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.11.1/TrackerTop100SDK.xcframework.zip)
 
 [Документация](https://stat-sberads.gitbook.io/documentation/nastroika-sbora-i-otpravki-dannykh/ios-sdk)
 
