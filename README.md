@@ -1,6 +1,5 @@
 # TrackerTop100SDK iOS
 
-https://img.shields.io/cocoapods/v/TrackerTop100SDK
 [![Swift](https://img.shields.io/badge/Swift-5.10-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.10-Orange?style=flat-square)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/TrackerTop100SDK?style=flat-square)](https://img.shields.io/cocoapods/v/TrackerTop100SDK)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
