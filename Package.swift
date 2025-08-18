@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "TrackerTop100SDK",
     platforms: [
-        .iOS(.v12),
+        .iOS(.v15),
     ],
     products: [
         .library(
@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TrackerTop100SDK", 
-            url: "https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.11.1/TrackerTop100SDK.xcframework.zip", 
-            checksum: "08802ca3cd97a5f4ba965edf56c06199cd533c44b24739ac0d8e72293083120d"
+            url: "https://github.com/top-100-writer/top100-tracker-ios-sdk/releases/download/1.12.0/TrackerTop100SDK.xcframework.zip", 
+            checksum: "2ed61f6ede5882e4230d9ead2f98d7195129fe13b4507423b4c102953e4ba987"
         )
     ]
 )
